@@ -1,0 +1,39 @@
+      // get all books
+
+/*  app.get ("/movie" ,(req,res)=> {
+    res.send(movie)
+} )  */
+
+      // using query how to get particular language          
+
+/*  app.get ("/movie", (req,res)=>{
+    const {language} = req.query
+    console.log(req.query)
+    const qlanguage = movie.filter((ml)=> ml.language.trim() === language )
+     res.send (qlanguage)
+}) 
+ */
+ // you need to get the all movie data  and language and rating 
+
+    // using param how to get the code from url to run (using filter method)
+
+/* app.get ("/movie/:id", (req, res) => {
+    const { id  }= req.params
+    console.log (req.params)
+    const mdata = movie.filter((ml) => ml.id === id)[0]
+     res.send(mdata)
+}) */
+
+ // using params to get the code from the url to run (using find method)    
+
+
+/* app.get ("/movie/:id", (req,res)=> {
+    const {id} = req.params;
+    console.log(req.params);
+    const mdata = movie.find((ml)=> ml.id ===  id ) ;
+    res.send(mdata)
+}); */
+
+  
+// res = what we are recive from the server
+// req = what req is we send to the server
